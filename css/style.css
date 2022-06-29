@@ -1,29 +1,71 @@
 :root {
+  /* Cores Primárias */
   --c12: #000;
   --c11: #1a1a1a;
   --c10: #333;
-  --c01: #fff;
+  --c09: #4d4d4d;
+  --c08: #666666;
+  --c07: #808080;
+  --c06: #808080;
+  --c05: #b3b3b3;
+  --c04: #cccccc;
+  --c03: #e6e6e6;
+  --c02: #f8f7f7;
+  --c01: #ffffff;
+
+  /* Cores Secundárias */
+  --p05: #332200;
+  --p04: #664400;
+  --p03: #a66f00;
+  --p02: #e5a40b;
+  --p01: #ffbb00;
+
+  /* Gradiente */
+  --grad-1: linear-gradient(#ffbf00, #f2a50c);
+  --grad-2: linear-gradient(#ffb60d, #e59317);
+
+  /* Fonte 1*/
+  --font-1-600-64: 600 64px Poppins, sans-serif;
+  --font-1-600-20: 600 20px Poppins, sans-serif;
+
+  /* Fonte 2*/
+  --font-2-400-24: 400 24px Roboto, sans-serif;
 }
+
+/* reset de padrões das tags */
 
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-ul {
+ul,
+h1,
+p {
   margin: 0px;
   padding: 0px;
+}
+
+ul {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .container {
   max-width: 1200px;
   margin: 0px auto;
 }
+
+/* Header */
 
 .header-bg {
   background-color: var(--c12);
@@ -108,4 +150,56 @@ a {
   .header-menu a:hover::after {
     display: none;
   }
+}
+
+/* Indrodução */
+.introducao-bg {
+  background-color: var(--c12);
+}
+
+.introducao {
+  color: var(--c01);
+  display: grid;
+  /* No protótipo foi definido um grid de 12 colunas, com a introdução dividida pela metade, portanto 6fr 6fr, essa atribuição tem o mesmo resultado de 1fr 1fr */
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  padding: 0 20px;
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 80px;
+}
+
+.introducao-conteudo h1 {
+  margin-bottom: 32px;
+  font: var(--font-1-600-64);
+  line-height: 1.125;
+}
+
+.introducao-conteudo h1 span {
+  color: var(--p01);
+}
+
+.introducao-conteudo p {
+  margin-bottom: 20px;
+  font: var(--font-2-400-24);
+  line-height: 1.5;
+  color: var(--c05);
+}
+
+.introducao a {
+  display: inline-block;
+  padding: 16px 32px;
+  background: var(--grad-1);
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, green0, 0, 0.1);
+  text-transform: uppercase;
+  color: var(--p05);
+  font: var(--font-1-600-20);
+  line-height: 1.33;
+}
+
+.introducao a:hover {
+  background: var(--grad-2);
 }
