@@ -1,0 +1,111 @@
+:root {
+  --c12: #000;
+  --c11: #1a1a1a;
+  --c10: #333;
+  --c01: #fff;
+}
+
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.header-bg {
+  background-color: var(--c12);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.header a {
+  align-content: center;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.header-menu a {
+  padding: 16px 0;
+  display: inline-block;
+  color: var(--c01);
+  font-size: 18px;
+
+  /* para consertar desajuster causado pelo position: absolute no after */
+  position: relative;
+}
+
+/* Cria sublinhado oculto */
+.header-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: var(--c01);
+  margin-top: 4px;
+  /* faz com que decoração não acrescente na altura definida para o elemento */
+  position: absolute;
+
+  transition: 0.4s;
+}
+
+/* mostra sublinhado */
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 20px;
+  }
+  .header-menu a {
+    background-color: var(--c11);
+    padding: 16px 12px;
+    border-radius: 5px;
+  }
+
+  .header-menu a:hover {
+    background-color: var(--c10);
+  }
+
+  .header-menu a:hover::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 12px;
+  }
+  .header-menu a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  .header-menu a:hover::after {
+    display: none;
+  }
+}
