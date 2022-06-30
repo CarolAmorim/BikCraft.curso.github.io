@@ -1,0 +1,80 @@
+/* Indrodução */
+.introducao-bg {
+  background-color: var(--c12);
+
+  /* adiciona sombra branca interna, valor negativo coloca sombra no final da div */
+  box-shadow: inset 0 -120px var(--c01);
+}
+
+.introducao {
+  color: var(--c01);
+  display: grid;
+  /* No protótipo foi definido um grid de 12 colunas, com a introdução dividida pela metade, portanto 6fr 6fr, essa atribuição tem o mesmo resultado de 1fr 1fr */
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  padding: 0 20px;
+}
+
+.introducao-conteudo {
+  align-self: end;
+
+  /* 80 em relação ao último elemento + 120 para compensar o box shadow */
+  padding-bottom: 200px;
+}
+
+.introducao img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.introducao-conteudo h1 {
+  margin-bottom: 32px;
+  font: var(--font-1-600-64);
+  line-height: 1.125;
+}
+
+.introducao-conteudo h1 span {
+  color: var(--p01);
+}
+
+.introducao-conteudo p {
+  margin-bottom: 20px;
+  font: var(--font-2-400-24);
+  line-height: 1.5;
+  color: var(--c05);
+}
+
+@media (max-width: 1200px) {
+  .introducao h1 {
+    font-size: 48px;
+    /* font: var(--font-1-600-48); */
+  }
+
+  .introducao-conteudo p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao-bg {
+    background: var(--c11);
+    padding-top: 40px;
+    box-shadow: inset 0 -60px var(--c01);
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .introducao-conteudo {
+    padding-bottom: 0px;
+  }
+  .introducao h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .introducao img {
+    height: 300px;
+    width: 100%;
+  }
+}

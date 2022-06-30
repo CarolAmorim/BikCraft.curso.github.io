@@ -1,0 +1,9 @@
+:root {
+  /* Fonte 1*/
+  --font-1-600-64: 600 64px Poppins, sans-serif;
+  --font-1-600-48: 600 48px Poppins, sans-serif;
+  --font-1-600-20: 600 20px Poppins, sans-serif;
+
+  /* Fonte 2*/
+  --font-2-400-24: 400 24px Roboto, sans-serif;
+}

@@ -1,0 +1,78 @@
+:root {
+  /* Cores bases */
+  --c12: #000;
+  --c11: #1a1a1a;
+  --c10: #333;
+  --c09: #4d4d4d;
+  --c08: #666666;
+  --c07: #808080;
+  --c06: #808080;
+  --c05: #b3b3b3;
+  --c04: #cccccc;
+  --c03: #e6e6e6;
+  --c02: #f8f7f7;
+  --c01: #ffffff;
+
+  /* Cores Primárias */
+  --p05: #332200;
+  --p04: #664400;
+  --p03: #a66f00;
+  --p02: #e5a40b;
+  --p01: #ffbb00;
+
+  /* Gradiente */
+  --grad-1: linear-gradient(#ffbf00, #f2a50c);
+  --grad-2: linear-gradient(#ffb60d, #e59317);
+}
+
+.cor-01 {
+  color: var(--c01);
+}
+.cor-02 {
+  color: var(--c02);
+}
+.cor-03 {
+  color: var(--c03);
+}
+.cor-04 {
+  color: var(--c04);
+}
+.cor-05 {
+  color: var(--c05);
+}
+.cor-06 {
+  color: var(--c06);
+}
+.cor-07 {
+  color: var(--c07);
+}
+.cor-08 {
+  color: var(--c08);
+}
+.cor-09 {
+  color: var(--c09);
+}
+.cor-10 {
+  color: var(--c10);
+}
+.cor-11 {
+  color: var(--c11);
+}
+.cor-12 {
+  color: var(--c12);
+}
+.cor-p-01 {
+  color: var(--p01);
+}
+.cor-p-02 {
+  color: var(--p02);
+}
+.cor-p-03 {
+  color: var(--p03);
+}
+.cor-p-04 {
+  color: var(--p04);
+}
+.cor-p-05 {
+  color: var(--p05);
+}
