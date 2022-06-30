@@ -1,9 +1,87 @@
 :root {
   /* Fonte 1*/
-  --font-1-600-64: 600 64px Poppins, sans-serif;
-  --font-1-600-48: 600 48px Poppins, sans-serif;
-  --font-1-600-20: 600 20px Poppins, sans-serif;
+  --font-1-b-xxl: 600 4rem/1.125 "Poppins", sans-serif;
+  --font-1-b-xl: 600 2rem/1.25 "Poppins", sans-serif;
+  --font-1-b-m: 600 1.125rem/1.35 "Poppins", sans-serif;
+  --font-1-b-s: 600 1rem/1.5 "Poppins", sans-serif;
+  --font-1-l: 400 1.5rem/1.5 "Poppins", sans-serif;
+  --font-1-m: 400 1.125rem/1.35 "Poppins", sans-serif;
+  --font-1-s: 400 1rem/1.5 "Poppins", sans-serif;
+  --font-1-xs: 400 0.75rem/1.35 "Poppins", sans-serif;
 
   /* Fonte 2*/
-  --font-2-400-24: 400 24px Roboto, sans-serif;
+  --font-2-b-xl: 500 2rem/1.5 "Roboto", sans-serif;
+  --font-2-b-l: 500 1.5rem/1.5 "Roboto", sans-serif;
+  --font-2-b-m: 500 1.125rem/1.35 "Roboto", sans-serif;
+  --font-2-l: 400 1.5rem/1.5 "Roboto", sans-serif;
+  --font-2-s: 400 1rem/1.5 "Roboto", sans-serif;
+  --font-2-xs: 400 0.875rem/1.43 "Roboto", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --font-1-b-xxl: 600 3rem/1.125 "Poppins", sans-serif;
+    --font-2-b-l: 500 1.125rem/1.5 "Roboto", sans-serif;
+    --font-2-l: 400 1.125rem/1.5 "Roboto", sans-serif;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --font-1-b-xxl: 600 2rem/1.125 "Poppins", sans-serif;
+    --font-1-b-xl: 500 1.25rem/1.5 "Roboto", sans-serif;
+    --font-2-b-xl: 400 1.5rem/1.5 "Roboto", sans-serif;
+  }
+}
+
+/* Fonte 1*/
+.font-1-b-xxl {
+  font: var(--font-1-b-xxl);
+}
+.font-1-b-xl {
+  font: var(--font-1-b-xl);
+}
+.font-1-b-m {
+  font: var(--font-1-b-m);
+}
+.font-1-b-s {
+  font: var(--font-1-b-s);
+}
+.font-1-l {
+  font: var(--font-1-l);
+}
+.font-1-m {
+  font: var(--font-1-m);
+}
+.font-1-s {
+  font: var(--font-1-s);
+}
+.font-1-xs {
+  font: var(--font-1-xs);
+}
+
+/* Fonte 2*/
+.font-2-b-xl {
+  font: var(--font-2-b-xl);
+}
+.font-2-b-l {
+  font: var(--font-2-b-l);
+}
+.font-2-b-m {
+  font: var(--font-2-b-m);
+}
+.font-2-l {
+  font: var(--font-2-l);
+}
+.font-2-s {
+  font: var(--font-2-s);
+}
+.font-2-xs {
+  font: var(--font-2-xs);
+}
+
+.font-2-b-l {
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
 }

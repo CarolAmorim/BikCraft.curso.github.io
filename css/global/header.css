@@ -28,7 +28,9 @@
   padding: 16px 0;
   display: inline-block;
   color: var(--c01);
+  font: var(--font-1-b-s);
   font-size: 18px;
+  font-weight: 500;
 
   /* para consertar desajuster causado pelo position: absolute no after */
   position: relative;

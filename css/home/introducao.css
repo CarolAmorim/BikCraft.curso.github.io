@@ -17,7 +17,6 @@
 
 .introducao-conteudo {
   align-self: end;
-
   /* 80 em relação ao último elemento + 120 para compensar o box shadow */
   padding-bottom: 200px;
 }
@@ -30,7 +29,7 @@
 
 .introducao-conteudo h1 {
   margin-bottom: 32px;
-  font: var(--font-1-600-64);
+  font: var(--font-1-b-xxl);
   line-height: 1.125;
 }
 
@@ -40,20 +39,9 @@
 
 .introducao-conteudo p {
   margin-bottom: 20px;
-  font: var(--font-2-400-24);
+  font: var(--font-2-l);
   line-height: 1.5;
   color: var(--c05);
-}
-
-@media (max-width: 1200px) {
-  .introducao h1 {
-    font-size: 48px;
-    /* font: var(--font-1-600-48); */
-  }
-
-  .introducao-conteudo p {
-    font-size: 18px;
-  }
 }
 
 @media (max-width: 800px) {
@@ -70,7 +58,6 @@
     padding-bottom: 0px;
   }
   .introducao h1 {
-    font-size: 32px;
     margin-bottom: 16px;
   }
   .introducao img {
