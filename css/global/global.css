@@ -7,6 +7,9 @@ body {
 
 ul,
 h1,
+h2,
+h3,
+h4,
 p {
   margin: 0px;
   padding: 0px;
@@ -26,7 +29,14 @@ img {
   display: block;
 }
 
+/* todas as imagens com atributos src terminados em: */
+img[src$=".jpg"] {
+  border-radius: 5px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
