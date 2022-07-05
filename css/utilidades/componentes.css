@@ -16,6 +16,33 @@
   background: var(--grad-2);
 }
 
+.link {
+  /* faz aceitar valores de margim e padding */
+  display: inline-block;
+  font: var(--font-1-b-l);
+  color: var(--p01);
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+
+  /* para consertar desajuster causado pelo position: absolute no after */
+  position: relative;
+}
+
+.link:hover {
+  color: var(--p03);
+}
+
+.link::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: currentColor; /* utiliza cor do pai*/
+  margin-top: 4px;
+  /* faz com que decoração não acrescente na altura definida para o elemento */
+  position: absolute;
+}
+
 @media (max-width: 600px) {
   .botao {
     padding: 12px 16px;
