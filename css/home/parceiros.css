@@ -1,0 +1,64 @@
+.parceiros {
+  padding-bottom: 120px;
+  padding-top: 60px;
+}
+
+.parceiros h2 {
+  margin-bottom: 60px;
+}
+
+.parceiros ul {
+  /* vazando container */
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 20px;
+}
+
+.parceiros li {
+  /* para permitir alinhar imagens ao centro */
+  display: flex;
+  padding: 32px;
+
+  border-left: 2px solid var(--c02);
+}
+
+.parceiros li:first-child,
+.parceiros li:nth-child(5) {
+  border-left: none;
+}
+
+.parceiros li:nth-child(n + 5) {
+  /* a partir do 5º item */
+  border-top: 2px solid var(--c02);
+}
+
+.parceiros li img {
+  /* conteudo ocupa todo espaço disponível */
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  .parceiros {
+    padding-bottom: 60px;
+  }
+  .parceiros h2 {
+    margin-bottom: 20px;
+  }
+  .parceiros ul {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+  .parceiros li:nth-child(n + 3) {
+    /* a partir do 5º item */
+    border-top: 2px solid var(--c02);
+  }
+  .parceiros li:nth-child(odd) {
+    /* remove nos impares */
+    border-left: none;
+  }
+  .parceiros li {
+    padding: 20px;
+  }
+}
