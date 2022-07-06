@@ -1,0 +1,90 @@
+.seguros-bg {
+  background-color: var(--c11);
+}
+
+.seguros {
+  padding: 120px 20px;
+  color: var(--c01);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+
+  /* alinha na vertical */
+  align-items: center;
+}
+
+.seguros h2 {
+  /* ocupando todas as colunas */
+  grid-column: 1/-1;
+  margin-bottom: 20px;
+}
+
+.seguros-item {
+  background-color: var(--c12);
+  border-radius: 5px;
+  padding: 32px;
+  padding-left: 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: start;
+}
+
+.seguros-item h3 {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.seguros-item span {
+  grid-column: 2;
+  /* deixa um abixo do outro */
+  display: block;
+  text-align: right;
+}
+
+.seguros-item ul {
+  font: var(font-2-l);
+  grid-column: 1/-1;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+.seguros-item li + li {
+  /* a partir do segundo li */
+  margin-top: 20px;
+}
+
+.seguros-item li {
+  /* para posicionar elemento no centro da linha */
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.seguros-item li::before {
+  content: "";
+  display: inline-block;
+
+  /* largura e altura definidos no protótipo */
+  width: 13px;
+  height: 9px;
+
+  background-image: url("../../img/icones/lista.svg");
+
+  /* para posicionar o elemento */
+  position: absolute;
+  left: -21px;
+}
+
+.seguros-item a {
+  grid-column: 1/-1;
+}
+
+@media (max-width: 800px) {
+  .seguros {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+
+    gap: 40px;
+  }
+}

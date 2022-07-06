@@ -10,6 +10,17 @@
   font: var(--font-1-b-m);
   font-size: 1.25rem;
   line-height: 1.33;
+  /* tamanho interno exato ao tamanho do conteúdo */
+  max-width: max-content;
+}
+
+.botao.secundario {
+  background: var(--c10);
+  color: var(--c02);
+}
+
+.botao.secundario:hover {
+  background: var(--c09);
 }
 
 .botao:hover {

@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: var(--p01);
-
   /* não gera barra de rolagem caso conteudo vaze */
   overflow: hidden;
 }
@@ -20,10 +19,12 @@
 }
 
 .depoimento-conteudo p {
-  font: 900 italic 2.25px/3px "Merriweather", serif;
-  margin-bottom: 32px;
   /* máximo de 32 caracteres */
   max-width: 32ch;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-weight: 900;
+  margin-bottom: 32px;
   position: relative;
 }
 
@@ -42,9 +43,6 @@
 
 .depoimento-conteudo p::after {
   content: "❞";
-  margin-top: 40px;
-  margin-left: 5px;
-  display: inline-block;
 }
 
 @media (max-width: 800px) {
@@ -55,7 +53,7 @@
 
   .depoimento-conteudo {
     padding: 40px 20px;
-    justify-self: center;
+    margin: auto;
   }
 
   .depoimento img {
