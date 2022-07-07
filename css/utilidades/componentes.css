@@ -27,6 +27,13 @@
   background: var(--grad-2);
 }
 
+@media (max-width: 600px) {
+  .botao {
+    padding: 12px 16px;
+    font: 1rem;
+  }
+}
+
 .link {
   /* faz aceitar valores de margim e padding */
   display: inline-block;
@@ -54,9 +61,40 @@
   position: absolute;
 }
 
-@media (max-width: 600px) {
-  .botao {
-    padding: 12px 16px;
-    font: 1rem;
+/* título páginas internas */
+
+.titulo-bg {
+  background-color: var(--c11);
+}
+
+.titulo {
+  padding: 60px 20px;
+}
+
+.titulo h1 {
+  font: var(--font-1-b-xxl);
+  color: var(--c01);
+}
+
+.titulo h1 span {
+  color: var(--p01);
+}
+
+.titulo p {
+  font: var(--font-2-b-l);
+  color: var(--c05);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 800px) {
+  .titulo {
+    padding: 40px 20px;
+  }
+
+  .titulo p {
+    font-size: 1rem;
+    font-weight: 400;
   }
 }
