@@ -1,0 +1,212 @@
+.bicicletas-bg {
+  background-color: var(--c01);
+  padding: 60px 0px;
+}
+
+main > div:first-child,
+main > div:last-child {
+  margin-bottom: 60px;
+}
+
+.bicicletas-bg:nth-child(3) {
+  background: linear-gradient(to right, var(--c01) 30%, var(--c11) 0);
+}
+
+.bicicletas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.bicicletas-imagem {
+  position: relative;
+  grid-template-columns: 1fr;
+}
+
+.bicicletas-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bicicletas-imagem span {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  color: var(--c01);
+  background-color: var(--c12);
+  padding: 8px;
+  padding-right: 16px;
+  border-radius: 5px 0 0 5px;
+}
+
+.bicicletas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  /* ao aumentar a tela não aumentar o espaçamento entre o conteúdo */
+  align-content: start;
+}
+
+.bicicletas-conteudo h2 {
+  /* de pona a ponta */
+  grid-column: 1/-1;
+  font: var(--font-1-b-xl);
+  color: var(--c11);
+  margin-bottom: 1.125rem;
+}
+
+.bicicletas-conteudo h2:before {
+  content: "";
+  display: block;
+  background-color: var(--p01);
+  left: 0;
+  height: 12px;
+  width: 12px;
+  border-radius: 50px;
+  margin-bottom: 8px;
+}
+
+.bicicletas-conteudo p {
+  grid-column: 1/-1;
+  font: var(--font-2-s);
+  color: var(--c08);
+  margin-bottom: 2rem;
+}
+
+.bicicletas-conteudo ul {
+  grid-column: 1;
+  font: var(--font-1-m);
+  color: var(--c08);
+  font-weight: 500;
+}
+
+.bicicletas-conteudo a {
+  /* força ocupar ultima coluna e ultima linha do grid */
+  place-self: end;
+}
+
+.bicicletas-conteudo ul li {
+  /* centraliza imagem ao conteudo*/
+  display: flex;
+  align-items: center;
+}
+
+.bicicletas-conteudo ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.bicicletas-conteudo ul li::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 24px;
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.bicicletas-conteudo ul li:nth-child(1)::before {
+  background-image: url("../../img/icones/eletrica.svg");
+}
+
+.bicicletas-conteudo ul li:nth-child(2)::before {
+  background-image: url("../../img/icones/carbono.svg");
+}
+
+.bicicletas-conteudo ul li:nth-child(3)::before {
+  background-image: url("../../img/icones/velocidade.svg");
+}
+
+.bicicletas-conteudo ul li:nth-child(4)::before {
+  background-image: url("../../img/icones/rastreador.svg");
+}
+
+.bicicletas-bg:nth-child(3) h2 {
+  color: var(--c02);
+}
+
+.bicicletas-bg:nth-child(3) p {
+  color: var(--c05);
+}
+
+@media (max-width: 1200px) {
+  .bicicletas-bg:nth-child(3) {
+    background: linear-gradient(to right, var(--c01) 20%, var(--c11) 0);
+  }
+}
+
+@media (max-width: 800px) {
+  .bicicletas-bg {
+    padding: 40px 0px;
+  }
+  .bicicletas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .bicicletas-bg:nth-child(3) {
+    background: var(--c11);
+  }
+
+  main > div:first-child,
+  main > div:last-child {
+    margin-bottom: 40px;
+  }
+
+  .bicicletas-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .bicicletas-conteudo h2 {
+    margin-bottom: 1rem;
+  }
+  .bicicletas-conteudo h2:before {
+    margin-bottom: 4px;
+  }
+
+  .bicicletas-conteudo p {
+    margin-bottom: 20px;
+  }
+
+  .bicicletas-conteudo ul li {
+    font-size: 1rem;
+  }
+
+  .bicicletas-conteudo ul li:not(:last-child) {
+    margin-bottom: 0.8rem;
+  }
+
+  .bicicletas-conteudo ul li::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicletas-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicletas-conteudo ul {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bicicletas-conteudo ul li:nth-child(3),
+  .bicicletas-conteudo ul li:nth-child(4) {
+    margin-bottom: 0rem;
+  }
+
+  .bicicletas-conteudo a {
+    /* força ocupar o centro do grid */
+    place-self: center;
+  }
+}
