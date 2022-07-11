@@ -14,6 +14,11 @@
   align-items: center;
 }
 
+#seguros .seguros {
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
 .seguros h2 {
   /* ocupando todas as colunas */
   grid-column: 1/-1;
@@ -28,6 +33,7 @@
   display: grid;
   grid-template-columns: 1fr auto;
   justify-content: start;
+  border-radius: 5x;
 }
 
 .seguros-item h3 {
