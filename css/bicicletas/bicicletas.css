@@ -3,8 +3,8 @@
   padding: 60px 0px;
 }
 
-main > div:first-child,
-main > div:last-child {
+#bicicletas-body main > div:first-child,
+#bicicletas-body main > div:last-child {
   margin-bottom: 60px;
 }
 
@@ -148,8 +148,8 @@ main > div:last-child {
     background: var(--c11);
   }
 
-  main > div:first-child,
-  main > div:last-child {
+  #bicicletas-body main > div:first-child,
+  #bicicletas-body main > div:last-child {
     margin-bottom: 40px;
   }
 
