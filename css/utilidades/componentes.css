@@ -12,6 +12,8 @@
   line-height: 1.33;
   /* tamanho interno exato ao tamanho do conteúdo */
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .botao.secundario {
