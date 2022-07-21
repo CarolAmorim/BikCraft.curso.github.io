@@ -32,7 +32,8 @@
 
 .orcamento-produto {
   border-radius: 5px 0 0 5px;
-  background: var(--c12);
+  background: var(--c12) url("../../img/dec/bottom-left.svg") no-repeat bottom
+    30px left 30px;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -116,7 +117,8 @@
 
 .orcamento-dados {
   border-radius: 0 5px 5px 0;
-  background: var(--c01);
+  background: var(--c01) url("../../img/dec/bottom-right.svg") no-repeat bottom
+    30px right 60px;
 }
 
 .orcamento-conteudo {
@@ -198,6 +200,7 @@
   }
   .orcamento-produto {
     border-radius: 5px 5px 0 0;
+    background: var(--c12);
   }
   .orcamento-dados {
     border-radius: 0 0 5px 5px;

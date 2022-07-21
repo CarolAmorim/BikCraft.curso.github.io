@@ -12,6 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&family=Merriweather:wght@900&family=Poppins:wght@500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <!-- força o carregamento inicial -->
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
 
   <title>BikCraft - Bicicletas Elétricas</title>
@@ -21,7 +23,7 @@
 
   <header class="header-bg">
     <div class="header container">
-      <a href="./"><img src="img/bikcraft.svg" alt="Logo"></a>
+      <a href="./"><img src="img/bikcraft.svg" width="136" height="32" alt="Logo"></a>
       <nav aria-label="primaria">
         <ul class="header-menu">
           <li><a href="/bicicletas.html">Bicicletas</a></li>
@@ -39,10 +41,10 @@
         <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft. </p>
         <a href="./bicicletas.html" class="botao">SELECIONE A SUA</a>
       </div>
-      <div>
-        <img src="img/fotos/introducao.jpg" alt="Bicicleta elétricas preta.">
-
-      </div>
+      <picture>
+        <source media="(max-width:800px)" srcset="./img/bicicletas/nimbus.png">
+        <img src="img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétricas preta.">
+      </picture>
 
     </div>
 
@@ -53,21 +55,21 @@
     <ul class="container">
       <li>
         <a href="./bicicletas/magic.html">
-          <img src="./img/bicicletas/magic-home.jpg" alt="Magic Might">
+          <img src="./img/bicicletas/magic-home.jpg" width="920" height="1040" alt="Magic Might">
           <h3>Magic Might</h3>
           <span>R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bicicletas/nimbus.html">
-          <img src="./img/bicicletas/nimbus-home.jpg" alt="Nimbus Stark">
+          <img src="./img/bicicletas/nimbus-home.jpg" width="920" height="1040" alt="Nimbus Stark">
           <h3>Nimbus Stark</h3>
           <span>R$ 4999</span>
         </a>
       </li>
       <li>
         <a href="./bicicletas/nebula.html">
-          <img src="./img/bicicletas/nebula-home.jpg" alt="Nebula Cosmic">
+          <img src="./img/bicicletas/nebula-home.jpg" width="920" height="1040" alt="Nebula Cosmic">
           <h3>Nebula Cosmic</h3>
           <span>R$ 3999</span>
         </a>
@@ -87,12 +89,12 @@
 
         <div class="tecnologia-detalhe">
           <div>
-            <img src="./img/icones/eletrica.svg" alt="">
+            <img src="./img/icones/eletrica.svg" width="32" height="32" alt="">
             <h3>Motor Elétrico</h3>
             <p>Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
           </div>
           <div>
-            <img src="./img/icones/rastreador.svg" alt="">
+            <img src="./img/icones/rastreador.svg" width="32" height="32" alt="">
             <h3>Rastreador</h3>
             <p>Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.</p>
           </div>
@@ -100,7 +102,7 @@
       </div>
 
       <div class="tecnologia-imagem">
-        <img src="./img/fotos/tecnologia.jpg" alt="Tecnologia">
+        <img src="./img/fotos/tecnologia.jpg" width="1200" height="1920" alt="Tecnologia">
       </div>
     </div>
 
@@ -109,20 +111,20 @@
   <section class="parceiros" aria-label="Nossos Parceiros">
     <h2 class="font-1-b-xxl container">nossos parceiros<span class="cor-p-01">.</span></h2>
     <ul>
-      <li><img src="img/parceiros/caravan.svg" alt="Caravan"></li>
-      <li><img src="img/parceiros/dogs.svg" alt="Dogs"></li>
-      <li><img src="img/parceiros/flexblog.svg" alt="Flexblog"></li>
-      <li><img src="img/parceiros/handel.svg" alt="Handel"></li>
-      <li><img src="img/parceiros/lescone.svg" alt="Lescone"></li>
-      <li><img src="img/parceiros/ranek.svg" alt="Ranek"></li>
-      <li><img src="img/parceiros/surfbot.svg" alt="Surfbot"></li>
-      <li><img src="img/parceiros/wildbeast.svg" alt="Wildbeast"></li>
+      <li><img src="img/parceiros/caravan.svg" width="140" height="38" alt="Caravan"></li>
+      <li><img src="img/parceiros/dogs.svg" width="152" height="39" alt="Dogs"></li>
+      <li><img src="img/parceiros/flexblog.svg" width="165" height="38" alt="Flexblog"></li>
+      <li><img src="img/parceiros/handel.svg" width="139" height="50" alt="Handel"></li>
+      <li><img src="img/parceiros/lescone.svg" width="208" height="41" alt="Lescone"></li>
+      <li><img src="img/parceiros/ranek.svg" width="149" height="36" alt="Ranek"></li>
+      <li><img src="img/parceiros/surfbot.svg" width="200" height="49" alt="Surfbot"></li>
+      <li><img src="img/parceiros/wildbeast.svg" width="196" height="34" alt="Wildbeast"></li>
     </ul>
 
   </section>
 
   <section class="depoimento" aria-label="Depoimento">
-    <div><img src="./img/fotos/depoimento.jpg" alt="Pessoa pedalando"></div>
+    <div><img src="./img/fotos/depoimento.jpg" width="1560" height="1360" alt="Pessoa pedalando"></div>
     <div class="depoimento-conteudo">
       <blockquote class="font-1-b-xl cor-p-05">
         <p>Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo.
@@ -177,9 +179,9 @@
           <li>Vitória - ES</li>
         </ul>
         <div class="footer-redes">
-          <a href="./"><img src="./img/redes/facebook-p.svg" alt="Facebook"></a>
-          <a href="./"><img src="./img/redes/instagram-p.svg" alt="Instagram"></a>
-          <a href="./"><img src="./img/redes/youtube-p.svg" alt="Youtube"></a>
+          <a href="./"><img src="./img/redes/facebook-p.svg" width="32" height="32" alt="Facebook"></a>
+          <a href="./"><img src="./img/redes/instagram-p.svg" width="32" height="32" alt="Instagram"></a>
+          <a href="./"><img src="./img/redes/youtube-p.svg" width="32" height="32" alt="Youtube"></a>
         </div>
       </div>
       <div class="footer-informacoes">

@@ -1,6 +1,6 @@
 .depoimento {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   background-color: var(--p01);
   /* não gera barra de rolagem caso conteudo vaze */
   overflow: hidden;
@@ -16,6 +16,9 @@
 .depoimento-conteudo {
   padding: 40px 40px 80px 80px;
   align-self: end;
+
+  background: url("../../img/dec/bottom-right-p.svg") no-repeat bottom 40px
+    right 40px;
 }
 
 .depoimento-conteudo p {
@@ -45,6 +48,12 @@
   content: "❞";
 }
 
+@media (min-width: 1200px) {
+  .depoimento img {
+    max-width: 600px;
+  }
+}
+
 @media (max-width: 800px) {
   .depoimento {
     grid-template-columns: 1fr;
@@ -54,6 +63,7 @@
   .depoimento-conteudo {
     padding: 40px 20px;
     margin: auto;
+    background: none;
   }
 
   .depoimento img {

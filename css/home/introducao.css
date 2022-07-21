@@ -1,6 +1,8 @@
 /* Indrodução */
 .introducao-bg {
-  background-color: var(--c12);
+  /* adiciona decoração após cor do fundo */
+  background: var(--c12) url("../../img/dec/bottom-left.svg") no-repeat bottom
+    160px left 40px;
 
   /* adiciona sombra branca interna, valor negativo coloca sombra no final da div */
   box-shadow: inset 0 -120px var(--c01);
