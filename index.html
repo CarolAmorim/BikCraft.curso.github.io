@@ -16,7 +16,10 @@
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
 
-  <title>BikCraft - Bicicletas Elétricas</title>
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
+  BikCraft - Bicicletas Elétricas</title>
 </head>
 
 <body>
@@ -43,7 +46,7 @@
       </div>
       <picture>
         <source media="(max-width:800px)" srcset="./img/bicicletas/nimbus.png">
-        <img src="img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétricas preta.">
+        <img src="img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétricas preta." Data-anime="500" class="fadeInLeft">
       </picture>
 
     </div>
@@ -198,6 +201,8 @@
 
   </footer>
 
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

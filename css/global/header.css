@@ -53,7 +53,8 @@
 }
 
 /* mostra sublinhado */
-.header-menu a:hover::after {
+.header-menu a:hover::after,
+.js .header-menu a.ativo::after {
   width: 100%;
 }
 

@@ -15,6 +15,10 @@
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
 
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
+
   <title>Seguros | BikCraft </title>
 </head>
 
@@ -50,7 +54,7 @@
           <li>suporte de 08h às 18h</li>
           <li>cobertura estadual</li>
         </ul>
-        <a href="./bicicletas.html" class="botao secundario">inscreva-se</a>
+        <a href="./orcamento.html?tipo=seguro&produto=prata" class="botao secundario">inscreva-se</a>
 
       </div>
       <div class="seguros-item">
@@ -64,7 +68,7 @@
           <li>desconto em parceiros</li>
           <li>acesso ao clube bikecraft</li>
         </ul>
-        <a href="./bicicletas.html" class="botao">inscreva-se</a>
+        <a href="./orcamento.html?tipo=seguro&produto=ouro" class="botao">inscreva-se</a>
 
       </div>
     </div>
@@ -116,35 +120,36 @@
     <h2 class="cor-12 font-1-b-xxl">perguntas frequentes<span class="cor-p-01">.</span></h2>
 
     <dl>
+      <!-- para tornar a navegação por tab possível as perguntas serão envolvidas numa tag button, essa funcionalidade não é possivel com a tag dt -->
       <div>
-        <dt>Qual forma de pagamento vocês aceitam?</dt>
-        <dd>Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO, Americam Express.<br><br>
+        <dt><button aria-controls="pergunta1" aria-expanded="true">Qual forma de pagamento vocês aceitam?</button></dt>
+        <dd id="pergunta1" class="ativa">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO, Americam Express.<br><br>
 
           Para pagamento à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
       </div>
       <div>
-        <dt>Como posso entrar em contato?</dt>
-        <dd>O empenho em analisar o julgamento imparcial das eventualidades oferece uma interessante oportunidade para verificação dos paradigmas corporativos.</dd>
+        <dt><button aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+        <dd id="pergunta2">O empenho em analisar o julgamento imparcial das eventualidades oferece uma interessante oportunidade para verificação dos paradigmas corporativos.</dd>
       </div>
       <div>
-        <dt>Vocês possuem algum desconto?</dt>
-        <dd>O empenho em analisar o julgamento imparcial das eventualidades oferece uma interessante oportunidade para verificação dos paradigmas corporativos.</dd>
+        <dt><button aria-controls="pergunta3" aria-expanded="false">Vocês possuem algum desconto?</button></dt>
+        <dd id="pergunta3">O empenho em analisar o julgamento imparcial das eventualidades oferece uma interessante oportunidade para verificação dos paradigmas corporativos.</dd>
       </div>
       <div>
-        <dt>Qual a garantia que possuo?</dt>
-        <dd>O empenho em analisar o julgamento imparcial das eventualidades oferece uma interessante oportunidade para verificação dos paradigmas corporativos.</dd>
+        <dt><button aria-controls="pergunta4" aria-expanded="false">Qual a garantia que possuo?</button></dt>
+        <dd id="pergunta4">O empenho em analisar o julgamento imparcial das eventualidades oferece uma interessante oportunidade para verificação dos paradigmas corporativos.</dd>
       </div>
       <div>
-        <dt>Posso parcelar no boleto?</dt>
-        <dd>O empenho em analisar o julgamento imparcial das eventualidades oferece uma interessante oportunidade para verificação dos paradigmas corporativos.</dd>
+        <dt><button aria-controls="pergunta5" aria-expanded="false">Posso parcelar no boleto?</button></dt>
+        <dd id="pergunta5">O empenho em analisar o julgamento imparcial das eventualidades oferece uma interessante oportunidade para verificação dos paradigmas corporativos.</dd>
       </div>
       <div>
-        <dt>Quantas trocas posso fazer ao ano?</dt>
-        <dd>O empenho em analisar o julgamento imparcial das eventualidades oferece uma interessante oportunidade para verificação dos paradigmas corporativos.</dd>
+        <dt><button aria-controls="pergunta6" aria-expanded="false">Quantas trocas posso fazer ao ano?</button></dt>
+        <dd id="pergunta6">O empenho em analisar o julgamento imparcial das eventualidades oferece uma interessante oportunidade para verificação dos paradigmas corporativos.</dd>
       </div>
       <div>
-        <dt>Qual Bikecraft devo escolher para o meu tamanho?</dt>
-        <dd>O empenho em analisar o julgamento imparcial das eventualidades oferece uma interessante oportunidade para verificação dos paradigmas corporativos.</dd>
+        <dt><button aria-controls="pergunta7" aria-expanded="false">Qual Bikecraft devo escolher para o meu tamanho?</button></dt>
+        <dd id="pergunta7">O empenho em analisar o julgamento imparcial das eventualidades oferece uma interessante oportunidade para verificação dos paradigmas corporativos.</dd>
       </div>
     </dl>
 
@@ -182,6 +187,7 @@
     <p class="footer-copy container">BikCraft ©Alguns direitos reservados</p>
 
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
